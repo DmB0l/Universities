@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Universities</string>
+    <string name="professions">Профессии, на которые обучает университет</string>
+    <string name="kafedra">Кафедры (Институты)</string>
+    <string name="dopInf">Дополнительная информация</string>
+    <string name="contactInf">Контактная информация</string>
+    <string name="rating">Отзывы и рейтинги</string>
+    <string name="universities_button">университеты СПБ</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="sign_in">Войти</string>
+    <string name="sign_up">Зарегистрироваться</string>
+    <string name="exit_button">Выход</string>
+    <string name="add_user_name">Добавить имя пользователя</string>
+    <string name="hint_comment">Введите текст комментария</string>
+    <string name="comment_button">комментировать</string>
+    <string name="choose_uni">Подобрать университет</string>
+    <string name="choose_profession">Подобрать профессию</string>
+    <string name="enter_profession">Введите профессию</string>
+    <string name="level_education">Выберите уровень образования</string>
+    <string name="bak">Бакалавриат</string>
+    <string name="spec">Специалитет</string>
+    <string name="mag">Магистратура</string>
+    <string name="hostel">Общежитие</string>
+    <string name="min_rate">Введите минимальный рейтинг университета</string>
+    <string name="find_uni">Найти университеты</string>
+    <string name="hostel_check">Необходимо ли вам общежитие</string>
+    <string name="profOrient">Вам предлагается пройти тест на профориентацию и узнать какая профессия вам подходит больше всего</string>
+    <string name="startTest">Начать тест</string>
+    <string name="fav_uni">избранное</string>
+    <string name="none_favourites">Добавляйте университеты в избранное, чтобы к ним можно было быстро вернуться</string>
+    <string name="enter_user_name">Введите имя пользователя</string>
+
+
+</resources>

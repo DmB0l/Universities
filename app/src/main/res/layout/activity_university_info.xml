@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".uniInfo.UniversityInfo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nameUni"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:textIsSelectable="true"
+                android:textSize="19sp"
+                />
+
+            <com.like.LikeButton
+                android:id = "@+id/likeButtonHeart"
+                android:layout_gravity = "center"
+                android:layout_toRightOf="@+id/nameUni"
+                android:layout_marginBottom = "8dp"
+                android:layout_marginTop = "25dp"
+                android:layout_marginRight="5dp"
+                android:layout_width = "40dp"
+                android:layout_height = "40dp"
+                app:icon_type = "heart"
+                app:circle_start_color = "#F1DD31"
+                app:dots_primary_color = "#0E77CC"
+                app:dots_secondary_color = "#FF1A4F"
+                app:circle_end_color = "#12A518"
+                app:icon_size = "40dp"
+                app:liked = "false"
+                app:anim_scale_factor = "2"
+                app:is_enabled = "true" />
+
+            <ImageView
+                android:id="@+id/imageUni"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/nameUni"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/coordsUni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageUni"
+                android:layout_marginHorizontal="100dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:textIsSelectable="true" />
+
+            <TextView
+                android:id="@+id/textProfessions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coordsUni"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/professions"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/professionsUni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textProfessions"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textKafedra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/professionsUni"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/kafedra"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/kafedraUni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textKafedra"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textDopInf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kafedraUni"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/dopInf"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/dopInf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textDopInf"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textContactInf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dopInf"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/contactInf"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/contactInf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textContactInf"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contactInf"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/rating"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textRating"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rating"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/noMyComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/comment"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/editTextComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/comment"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="@string/hint_comment"/>
+
+            <Button
+                android:id="@+id/buttonComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextComment"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_horizontal"
+                android:onClick="addComment"
+                android:text="@string/comment_button" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/element_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp" />
+</LinearLayout>

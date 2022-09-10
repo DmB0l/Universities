@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uniFilter.FilterUniversities">
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:hint="@string/enter_profession"
+        android:text=""/>
+
+    <TextView
+        android:id="@+id/textDirection"
+        android:layout_below="@+id/autoCompleteTextView"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="@string/level_education" />
+
+    <CheckBox
+        android:id="@+id/checkBoxBakalavr"
+        android:layout_below="@+id/textDirection"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bak" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSpicialitet"
+        android:layout_below="@+id/checkBoxBakalavr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/spec" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMagistr"
+        android:layout_below="@+id/checkBoxSpicialitet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mag" />
+
+    <TextView
+        android:id="@+id/textHostel"
+        android:layout_below="@+id/checkBoxMagistr"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="@string/hostel_check" />
+
+    <CheckBox
+        android:id="@+id/checkBoxHostel"
+        android:layout_below="@+id/textHostel"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hostel" />
+
+    <TextView
+        android:id="@+id/textRating"
+        android:layout_below="@+id/checkBoxHostel"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:text="@string/min_rate" />
+
+    <EditText
+        android:id="@+id/editTextMinRating"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textRating"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:hint="Example: 3.5"
+        android:visibility="gone"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/buttonFindUni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextMinRating"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:onClick="findButtonClickListener"
+        android:text="@string/find_uni" />
+
+    <include
+        layout="@layout/element_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
